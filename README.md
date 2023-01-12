@@ -1,7 +1,6 @@
 ![React: Mutabilidade x Imutabilidade no Redux Toolkit com Immer](curso.png)
 
-# Site Trato Tech
-##  Alura curso: React: Mutabilidade x Imutabilidade no Redux Toolkit com Immer
+# Site Trato Tech Redux Immer
 - JavaScipt
 - Criação de componentes e pages
 - CSS modules
@@ -9,11 +8,6 @@
 - React Redux
 - ReduxJS Toolkit
 - React Hook Form
-## Adicionais além do curso
-- responsividade mobile ajustada
-- adicionado contador no ícone do carrinho
-- adicionado botão remover item na página carrinho
-- Valores no formato pt-BR
 
 #### Vercel Pages: em breve
 
@@ -24,7 +18,10 @@
 - Como reaproveitar estilos extraindo componentes quando necessário; :white_check_mark:
 - Como o register e o handleSubmit funcionam. :white_check_mark:
 ### Aula 3:
-- 
+- Como criar validações com react-hook-form; :white_check_mark:
+- Como utilizar inúmeras funcionalidades do Redux Devtools; :white_check_mark:
+- O que é mutabilidade; :white_check_mark:
+- O que é referência e o que isso tem a ver com React e com renderizações desnecessárias. :white_check_mark:
 ### Aula 4:
 - 
 ### Aula 5:
