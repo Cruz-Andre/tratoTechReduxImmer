@@ -7,8 +7,8 @@ function Input({value, onChange, ...outrosProps}, ref) {
       ref={ref}
       value={value} 
       onChange={onChange} 
-      {...outrosProps}
       className={styles.input} 
+      {...outrosProps}
     />
   )
 }

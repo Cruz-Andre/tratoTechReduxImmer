@@ -33,7 +33,10 @@
 - Como e quando utilizar o return no Immer; :white_check_mark:
 - Como utilizar Object.assign. :white_check_mark:
 ### Aula 6:
-- 
+- Como deletar um item de dentro do reducer com splice ou filter; :white_check_mark:
+- Como utilizar o splice e o que ele é; :white_check_mark:
+- Mais detalhes sobre Object.assign; :white_check_mark:
+- Porque precisamos utilizar return quando utilizamos filter. :white_check_mark:
 
 # Getting Started with Create React App
 
