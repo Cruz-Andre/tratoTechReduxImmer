@@ -28,7 +28,10 @@
 - Quais benefícios a Imutabilidade nos traz; :white_check_mark:
 - Porque o spread operator não resolve dados complexos dentro de dados complexos. :white_check_mark:
 ### Aula 5:
-- 
+- O que é ref e forwardRef; :white_check_mark:
+- Como reaproveitar um componente que precisa de ref; :white_check_mark:
+- Como e quando utilizar o return no Immer; :white_check_mark:
+- Como utilizar Object.assign. :white_check_mark:
 ### Aula 6:
 - 
 

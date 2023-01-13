@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form'
 import styles from './Anuncie.module.scss'
 import { cadastrarItem } from "store/reducers/itensSlice";
 import { useParams } from "react-router-dom";
+import Input from "components/Input/Input";
 
 
 export default function Anuncie() {
@@ -38,7 +39,7 @@ export default function Anuncie() {
         descricao='Anuncie seu produto aqui!'
       />
       <form className={styles.formulario} onSubmit={handleSubmit(cadastrar)}>
-        <input 
+        <Input 
           className={errors.titulo ? styles.inputErro : ''} 
           {...register('titulo', {required: 'O campo nome é obrigatório!'})} 
           placeholder="Nome do produto" 
@@ -46,7 +47,7 @@ export default function Anuncie() {
         />
         {errors.titulo && <span className={styles.mensagemErro}> {errors.titulo.message} </span>}
 
-        <input 
+        <Input 
           className={errors.descricao ? styles.inputErro : ''} 
           {...register('descricao', {required: 'O campo descrição é obrigatório!'})}
           placeholder="Descrição do produto" 
@@ -54,7 +55,7 @@ export default function Anuncie() {
         />
         {errors.descricao && <span className={styles.mensagemErro}> {errors.descricao.message} </span>}
 
-        <input 
+        <Input 
           className={errors.foto ? styles.inputErro : ''} 
           {...register('foto', {required: 'O campo da URL é obrigatório!'})}
           placeholder="URL da imagem do produto" 
@@ -76,7 +77,7 @@ export default function Anuncie() {
         </select>
         {errors.categoria && <span className={styles.mensagemErro}> {errors.categoria.message} </span>}
 
-        <input 
+        <Input 
           className={errors.preco ? styles.inputErro : ''} 
           {...register('preco', {required: 'O campo preço é obrigatório!', valueAsNumber: true})} 
           type='number' 

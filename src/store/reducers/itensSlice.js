@@ -249,10 +249,21 @@ const itensSlice = createSlice({
     cadastrarItem: (state, { payload }) => {
       //console.log('payload:', payload)
       state.push({...payload, id: uuid(), favorito: false})
+    },
+
+    mudarItem: (state, { payload }) => {
+      //console.log(payload)
+      state.map(item => {
+        if (item.id === payload.id) Object.assign(item, payload.item) //Ou no lugar do Object.assing ---> item = {...item, ...payload.item} aqui nesse caso deve haver um return antes do .map()
+        return item
+      })
+      // Ou
+      // const index = state.findIndex(item => item.id === payload.id)
+      // Object.assign(state[index], payload.item)
     }
   }
 })
 
-export const { mudarFavorito, cadastrarItem } = itensSlice.actions
+export const { mudarFavorito, cadastrarItem, mudarItem } = itensSlice.actions
 
 export default itensSlice.reducer
