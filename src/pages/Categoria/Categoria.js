@@ -1,7 +1,8 @@
+import Button from "components/Button/Button";
 import Header from "components/Header/Header";
 import Item from "components/Item/Item";
 import { useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 import styles from './Categoria.module.scss'
 
@@ -18,13 +19,19 @@ export default function Categoria() {
     }
   })
   
+  const navigate = useNavigate()
+
   return (
     <div>
       <Header
         titulo={categoria.nome}
         descricao={categoria.descricao}
         imagem={categoria.header}
-      />
+      >
+        <Button onClick={() => navigate(`/anuncie/${nomeCategoria}`)}>
+          Quero anunciar
+        </Button>
+      </Header>
       <div className={styles.itens}>
         {itens.map(item => (
           <Item key={item.id} {...item} />

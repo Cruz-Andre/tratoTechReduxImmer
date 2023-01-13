@@ -238,7 +238,7 @@ const itensSlice = createSlice({
   reducers: {
     mudarFavorito: (state, params) => {
       //console.log('state: ', state)
-      state = state.map(item => {
+      state.map(item => {
         if (item.id === params.payload) item.favorito = !item.favorito
         return item
       })
@@ -248,7 +248,7 @@ const itensSlice = createSlice({
     // nova action para cadastrar um novo item
     cadastrarItem: (state, { payload }) => {
       //console.log('payload:', payload)
-      state.push({...payload, id: uuid()})
+      state.push({...payload, id: uuid(), favorito: false})
     }
   }
 })

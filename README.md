@@ -23,7 +23,10 @@
 - O que é mutabilidade; :white_check_mark:
 - O que é referência e o que isso tem a ver com React e com renderizações desnecessárias. :white_check_mark:
 ### Aula 4:
-- 
+- O que é Immer; :white_check_mark:
+- Como a imutabilidade funciona; :white_check_mark:
+- Quais benefícios a Imutabilidade nos traz; :white_check_mark:
+- Porque o spread operator não resolve dados complexos dentro de dados complexos. :white_check_mark:
 ### Aula 5:
 - 
 ### Aula 6:
